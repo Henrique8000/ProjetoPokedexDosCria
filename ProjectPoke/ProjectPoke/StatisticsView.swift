@@ -9,7 +9,12 @@ import SwiftUI
 
 struct StatisticsView : View {
     var body : some View {
-        Text("Estatisticas")
+        TabView {
+            .tabitem {
+                Label("Statistics", systemImage: "function.fill")
+                    .foregroundColor(.blue)
+            }
+        }
     }
 }
  
