@@ -9,7 +9,12 @@ import SwiftUI
 
 struct PokedexView : View {
     var body : some View {
-        Text("Pokedex")
+        TabView{
+          .tabitem{
+              Label("Pokedex", systemImage:"book.closed.fill")
+                .foregroundColor(.blue)
+            }
+        }
     }
 }
 
