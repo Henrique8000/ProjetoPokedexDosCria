@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollPokedex()
-        StartView()
+
+        VStack {
+            ScrollPokedex()
+        }
         
+        HStack{
+            StartView()
+            }
         }
     }
 
@@ -20,15 +25,3 @@ struct ContentView: View {
                 ContentView()
             }
         }
-
-struct MoreView: View {
-    var body: some View {
-        List {
-            Text("Thing 1")
-            Text("Thing 2")
-            Text("Thing 3")
-            Text("Thing 4")
-            Text("Thing 5")
-        }
-    }
-}
