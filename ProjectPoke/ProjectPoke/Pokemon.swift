@@ -1,3 +1,12 @@
+//
+//  Pokemon.swift
+//  pokedex
+//
+//  Created by Mack Aluno on 19/03/25.
+//
+
+import Foundation
+
 // By: Deepseek
 
 enum ElementType: String {
@@ -21,10 +30,11 @@ enum ElementType: String {
     case ghost
 }
 
-struct Pokemon {
+struct Pokemon : Identifiable {
     var id: Int
     var name: String
     var types: [ElementType]
+//    var possui: Bool
 }
 
 let pokemons: [Pokemon] = [
@@ -180,3 +190,4 @@ let pokemons: [Pokemon] = [
     Pokemon(id: 150, name: "mewtwo", types: [.psychic]),
     Pokemon(id: 151, name: "mew", types: [.psychic])
 ]
+
